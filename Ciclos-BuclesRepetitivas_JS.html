@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos de JS</title>
+</head>
+<body>
+    <h1>Fundamentos de JS</h1>
+<script>
+    //WHILE
+let contador =0;
+while(contador < 10){
+    console.log(contador);
+    contador ++;
+}
+
+do{
+    console.log(contador);
+    contador ++;
+}while(contador < 10);
+
+    //FOR
+    //for(iniciar variable;condicion;decremento o incremente){sentencia a ejecutar}
+
+    for(let i=0; i<10; i++){
+        console.log("for"+i);
+    }
+
+    //Recorrer los datos de un array
+    let numeros =[10,20,30,40,50,60,70,80,90,100];
+
+    for(let i = 0; i< numeros.length; i++){
+        console.log(numeros[i]);
+    }
+
+    //Recorrer propiedades de un objeto (in)
+    const jose ={nombre: "jose", apellido: "Rivas", edad: 20}
+
+    for (const propiedad in jose){
+        console.log(`Propiedad: ${propiedad}, Value: ${jose[propiedad]}.`);
+    }
+
+    //Recorrer todo los elementes de un objeto (of)
+    for(const elemento of numeros){
+        console.log(elemento);
+    }
+
+    let cadena = "Hola perro";
+    for (const caracter of cadena){
+        console.log(caracter);
+    }
+</script>
+</body>
+</html>

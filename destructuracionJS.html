@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos de JS</title>
+</head>
+<body>
+    <h1>Fundamentos de JS</h1>
+<script>
+//Guardar valofres de un array en variables diferentes
+const numeros=[1,2,3];
+
+//SIN DESTRUCTURACIÓN
+let uno = numeros[0],
+    dos = numeros[1],
+    tres = numeros[2];
+console.log(uno, dos, tres);
+
+//CON DESTRUCTURACÍON
+
+cont [one, two, three] = numeros;
+console.log(one, two, three);
+
+//OBJETO
+
+const persona ={
+    nombre: "Jose",
+    apellido: "Rivas",
+    edad: 20
+}
+//crear las variables igual que las propiedades del objeto persona
+let {nombre,apellido,edad} = persona;
+console.log(nombre,apellido,edad);
+
+</script>
+</body>
+</html>

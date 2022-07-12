@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos JS</title>
+</head>
+<body>
+<h1>Fundamentos JS</h1>
+<script>
+
+    //TRY - CATCH - FINALLY
+
+    try{
+        console.log("Se agrega el codigo a evaluar");
+    }catch(error){
+        console.log("Catch, captura cualquier error surgido en el try");
+        console.log(error);
+    }finally{
+        console.log("se ejecutara siempre al final de un bloque try-catch")
+    }
+
+
+    try{
+        let numero = "ty";
+        //isNaN valida si es numero o no devolviendo un boolean
+        if(isNaN(numero)){
+            throw new Error("El caracter no es un numero");
+        }
+        console.log(numero * numero);
+    }catch(error){
+        console.log(`Se produjo el error: ${error}`)
+    }
+</script>
+</body>
+</html>

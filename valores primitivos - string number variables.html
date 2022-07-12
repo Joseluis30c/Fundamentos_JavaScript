@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+<h1>Fundamentos JavaScript</h1>
+<script>
+    /*
+    //var es para declarar una variable ambito global, no recomendable
+    var hola ="Hola Mundo"
+    //let para declarar variable ambito local o de bloque 
+    let hello = "Hello World"
+
+    //declarar objeto con let o con const
+    let objeto = {
+        nombre:"Jose",
+        edad:20
+    }
+    //declarar un array
+    const colores =["blanco", "negro","rojo"]
+
+    console.log(objeto)
+    console.log(colores)
+
+    //Agregar un nuevo valor al objeto
+    objeto.correo = "jose@gmail.com"
+
+    //Agregar al final un nuevo valor al array
+    colores.push("azul")
+
+
+    //CADENAS DE TEXTO
+    let nombre = "Jose"
+    let apellido = 'Rivas'
+    let saludo = new String("hola mundo")
+    let lorem ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque quo officia aliquam dolore accusamus! Minus dolorem saepe facere similique magni maiores nihil non praesentium vero quaerat! Tenetur, neque dolore?"
+    
+    console.log(nombre,apellido,saludo)
+    console.log(
+        //longitud
+        nombre.length,
+        apellido.length,
+        saludo.length,
+        //poner todo en mayuscula
+        nombre.toUpperCase(),
+        //poner en minuscula
+        apellido.toLowerCase(),
+        //buscar si existe la palabra
+        lorem.includes("amet"),
+        //trim quita los espacios en blanco antes y despues del texto
+        lorem.trim(),
+        //convetir una cadena de texto en arreglo
+        //ejemplo cada espacio en blanco es un valor del array
+        lorem.split(" "),
+        //cada coma (,) es un valor del array
+        lorem.split(",")
+
+     )
+
+    */
+     // STRINGS
+
+     let nombre = "Jose";
+     let apellido = "Rivas";
+
+     //Concatenacion 
+     let saludo ="Hola soy " + nombre + " " + apellido + "."
+     console.log(saludo);
+
+     //Interpolacion de variables
+     //Template String  - Alt+96 (`)
+     let saludo2 = `Hola soy ${nombre}${apellido}.`;
+     console.log(saludo2);
+
+     //¿DONDE USAR LOS TEMPLATE STRING?
+     //comillas simples o dobles no permite saltos de linea
+     let ul = "<ul><li>Primavera</li></ul>";
+     console.log(ul);
+
+    // con template string si
+    let ul2 = `
+    <ul>
+        <li>Primavera<li>
+    </ul>
+    `;
+    console.log(ul2);
+
+
+    //NUMEROS
+    let a = 2;
+    let b = new Number(1);
+    let c = 7.19;
+    let d ="5.6";
+
+    //cantidad de decimales
+    console.log(c.toFixed(1));
+    //conocer tipo de dato
+    console.log(typeof c, typeof d);
+    //sumar tipo numerico y string
+    console.log(c + parseFloat(d));
+    //o
+    console.log(c + Number.parseFloat(d));
+
+</script>
+</body>
+</html>

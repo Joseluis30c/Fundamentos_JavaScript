@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+<h1>Fundamentos JavaScript</h1>
+<script>
+//CONDICIONALES
+    //IF -- ELSE
+    let edad = 17;
+
+    if(edad>17){
+        console.log("Eres mayor de edad");
+    }else{
+        console.log("Eres menor de edad");
+    }
+
+    if(edad >= 18){
+        console.log("Eres mayor de edad");
+    }else{
+        console.log("Eres menor de edad");
+    }
+
+    if(edad< 18){
+        console.log("Eres menor de edad");
+    }else{
+        console.log("Eres mayor de edad");
+    }
+
+    if(edad <= 17){
+        console.log("Eres menor de edad");
+    }else{
+        console.log("Eres mayor de edad");
+    }
+
+    // IF -- ELSE IF -- ELSE
+    /*
+    Dejame dormir pe - 0 - 5 horas
+    Buenos dias men - 6 - 11 horas
+    Buenas tardes man - 12 - 18 horas
+    Buenas noches bro - 19 - 23 horas
+    */
+    let hora =5;
+
+    if (hora>=0&&hora <=5){
+        console.log("Dejame dormir pe");
+    }else if(hora>=6 && hora <=11){
+        console.log("Buenos dias men");
+    }else if(hora >=12 && hora<=18){
+        console.log("Buenas tardes man");
+    }else{
+        console.log("Buenas noches bro");
+    }
+
+
+    //OPERADOR TERNARIO - (condicion) ? verdadero : falso
+    console.log("operador ternario");
+    let eresMayor= (edad>=18)
+        ?"Eres mayor de edad"
+        :"Eres menor de edad";
+    console.log(eresMayor);
+
+    //SWITCH -- CASE
+    /*
+    domingo - 0
+    lunes - 1
+    martes - 2
+    miercoles - 3
+    jueves - 4 
+    viernes - 5
+    sabado - 6
+    */
+    let dia = 3;
+
+    switch(dia){
+        case 0:
+            console.log("Domingo")
+        break;
+        case 1:
+            console.log("Lunes");
+        break;
+        case 2:
+            console.log("Martes");
+        break;
+        case 3:
+            console.log("Miercoles");
+        break;
+        case 4:
+            console.log("Jueves");
+        break;
+        case 5:
+            console.log("Viernes");
+        break;
+        case 6:
+            console.log("Sábado");
+        break;
+
+        default:
+            console.log("Dia no existe");
+        break;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos de JS</title>
+</head>
+<body>
+    <h1>Fundamentos de JS</h1>
+<script>
+    //Usar variables declaradas, como valor dentro del objeto
+
+    let nombre = "Luna",
+        edad = 5;
+    
+    //SIN USAR OBJETO LITERARIO
+    const perro = {
+        nombre: nombre,
+        edad: edad,
+        ladrar: function (){
+            console.log("guau guau!!");
+        }
+    }
+
+    console.log(perro);
+    perro.ladrar();
+
+    //USANDO OBJETO LITERARIO
+    const dog ={
+        nombre,
+        edad,
+        raza: "pony",
+        ladrar(){
+            console.log("guau,guau,guau!!!");
+        }
+    }
+    console.log(dog);
+</script>
+</body>
+</html>

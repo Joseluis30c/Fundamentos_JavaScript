@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+<h1>Fundamentos JavaScript</h1>
+<script>
+//OPERADORES 
+    //ARITMETICOS + - * / % ()
+
+let a = 5 + (5 -10) * 3; 
+//el residuo de una division
+let modulo = 5 % 2;
+
+console.log(a); //-10
+console.log(modulo) //1
+
+    //RELACIONALES : >,<,<=,>=,==,===,!=,!==
+
+console.log(8 > 9); //false
+console.log(9 > 8); //true
+console.log(8 >= 9); //false
+console.log(9 >= 8); //true
+console.log(7 < 7); //false
+console.log(7 <= 7); //true
+
+/*
+= 1 igual es asignacion de variable
+== 2 iguales es comparacion de valores
+=== 3 iguales es comparacion de tipo de datos y de valor 
+*/
+
+console.log(7 == 7); //true
+console.log("7" == 7); //true
+console.log(0 == false); //true
+
+console.log(7 === 7); //true
+console.log("7" === 7); //false
+console.log(0 === false); //false
+
+    //INCREMENTO DECREMENTO
+
+let i = 2;
+
+//operador unario - porque suma de uno en uno
+
+i++;
+i--;
+
+console.log(i);
+
+    //LOGICOS 
+    /*
+    ! - Not: Niega, es decir lo que es verdadero lo vuelve falso
+    || - Or: Cuando tengo 2 o mas condiciones, con que una sea verdadera, el Or sera verdadero
+    && - And: Cuando tengo 2 o mas condiciones, todas tienen que cumplirse(sean verdaderas) para que and se valide
+    */
+
+    console.log(!true); //false
+    console.log(!false); //true
+    console.log((9===9)||("9"===9)); //true
+    console.log((9===9)&&("9"===9)); //false
+    console.log((9===9)&&("9"==="9")); //true
+    
+</script>
+</body>
+</html>

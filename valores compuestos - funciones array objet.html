@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+<h1>Fundamentos JavaScript</h1>
+<script>
+    /*
+    //FUNCIONES 
+    function estoEsUnaFuncion(){
+        console.log("UNO");
+    }
+    estoEsUnaFuncion();
+
+    //funcion que devuelve un valor
+    function devuelve(){
+        console.log("uno");
+        return "Retorno una cadena de texto";
+    }
+    let valor = devuelve();
+    console.log(valor);
+
+    //funcion recibe parametros
+    function saludar(nombre = "Desconocido",edad=0){
+        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+    }
+    saludar("Jose", 20);
+
+    //si se ejecuta la funcion sin darle valores, muestra los valores que se definieron en la funcion
+    saludar();
+
+    //FUNCIONES DECLARADAS VS FUNCIONES EXPRESADAS
+
+    declarada();//muestra la funcion
+    function declarada(){
+        console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, incluso antes de que la funcion sea declarada")
+    }
+
+    declarada();//muestra la funcion
+
+    //expresada(); //muestra error
+    //funcion anonima
+    const expresada = function(){
+        console.log("Esto es una funcion expresada, es decir, una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su definicion JS nos dirá 'Cannot access expresada before initialization'")
+    }
+
+    declarada();//muestra la funcion
+    */
+    
+    /*
+    //ARREGLOS - Coleccion de datos
+
+    const a = [];
+    const b = [1, true, "Hola", ["A","B","C"[1,2,3]]];
+
+    console.log(a);
+    console.log(b);
+    //longitud del arreglo
+    console.log(b.length);
+    //acceder a un valor del arreglo
+    console.log(b[2]); //Hola
+    //acceder a una posicion de un arreglo dentro de otro arreglo
+    console.log(b[3][2]); //C
+    console.log(b[3][3][0]); //1
+
+    //otra forma de llenar un array
+    const c= Array.of("x","Y","Z",9,8,7);
+    console.log(c);
+
+    //un array de 100 elementos y fill(llene los 100 con valor false)
+    const d = Array(100).fill(false);
+    console.log(d);
+
+    //ALGUNOS METODOS DE LOS ARRAYS
+    const colores = ["Rojo","Verde","Azul"];
+    console.log(colores);
+
+    //Agregar un valor al final del array
+    colores.push("Negro"); 
+    console.log(colores); // Rojo,Verde,Azul,Negro
+
+    //Quitar el ultimo valor del array
+    colores.pop();
+    console.log(colores); //Rojo,Verde,Azul
+
+    //imprimir en lista el array con su indice respectivo
+    colores.forEach(function(el,index){
+        console.log(`<li id="${index}">${el}</li>`);
+    });
+    //<li id="0">Rojo</li>
+    //<li id="1">Verde</li>
+    //<li id="2">Azul</li>
+    */
+
+   // OBJETOS - Coleccion de llaves valor
+
+   const b = {};
+   console.log(b);
+
+   /* dentro de un objeto a las variables se le van
+   a llamar atributos/propiedades y a las funciones 
+   se les llama metodos*/
+   const jose = {
+    nombre: "Jose",
+    apellido: "Rivas",
+    edad: 20,
+    //dentro de un objeto puede declarar un array
+    pasatiempos: ["Correr","Escuchar musica","Aprender"],
+    soltero: true,
+    //tambien un objeto dentro de un objeto
+    contacto:{
+        email: "jose@gmail.com",
+        instagram: "joseluis30_c",
+        movil: "987654321"
+    },
+    //tambien una funcion
+    saludar: function(){
+        console.log("Hola ;)")
+    },
+
+    decirMiNombre: function(){
+        console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.instagram} en intagram`)
+    }
+
+   }
+
+   //Acceder al objeto
+   console.log(jose["nombre"]); //Jose
+   console.log(jose.nombre); //Jose
+   //acceder a un array dentro del objeto
+   console.log(jose.pasatiempos); //Correr,Escuchar musica,Aprender
+   console.log(jose.pasatiempos[1]); //Escuchar musica
+   //Acceder a un objeto dentro de un objeto
+   console.log(jose.contacto); //email,instagram,movil
+   console.log(jose.contacto.instagram); //joseluis30_c
+   //acceder a una funcion dentro del objeto
+   jose.saludar(); //Hola ;)
+   jose.decirMiNombre(); //Hola me llamo Jose Luis y tengo 20 años y me puedes seguir en intagram como joseluis30_c
+   
+   //Listar como array solo las propiedad del objeto
+   console.log(Object.keys(jose)); //posicion / propiedad
+
+   //listar como array solo los valores del objeto
+   console.log(Object.values(jose)); // posicion / valor
+
+   //Evalua si existe una propiedad del array
+   console.log(jose.hasOwnProperty("nombre")); //true
+   console.log(jose.hasOwnProperty("nacimiento")); //false
+</script>
+</body>
+</html>
